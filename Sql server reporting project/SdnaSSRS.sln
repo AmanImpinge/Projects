@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{F14B399A-7131-4C87-9E4B-1186C45EF12D}") = "SdnaSSRS", "SdnaSSRS\SdnaSSRS.rptproj", "{D1DB9FB0-BB27-43D2-815B-73EEFD378578}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		DebugLocal|Default = DebugLocal|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D1DB9FB0-BB27-43D2-815B-73EEFD378578}.Debug|Default.ActiveCfg = Debug
+		{D1DB9FB0-BB27-43D2-815B-73EEFD378578}.DebugLocal|Default.ActiveCfg = DebugLocal
+		{D1DB9FB0-BB27-43D2-815B-73EEFD378578}.DebugLocal|Default.Build.0 = DebugLocal
+		{D1DB9FB0-BB27-43D2-815B-73EEFD378578}.Release|Default.ActiveCfg = Release
+		{D1DB9FB0-BB27-43D2-815B-73EEFD378578}.Release|Default.Build.0 = Release
+		{D1DB9FB0-BB27-43D2-815B-73EEFD378578}.Release|Default.Deploy.0 = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

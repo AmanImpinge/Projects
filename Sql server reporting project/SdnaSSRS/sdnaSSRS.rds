@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RptDataSource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="SdnaSSRS">
+  <ConnectionProperties>
+    <Extension>SQL</Extension>
+    <ConnectString>Data Source=GANGA\SQLSERVER2008R2;Initial Catalog=OnGuard</ConnectString>
+  </ConnectionProperties>
+  <DataSourceID>f0d892ff-3fea-4069-999d-a409d42bfd71</DataSourceID>
+</RptDataSource>

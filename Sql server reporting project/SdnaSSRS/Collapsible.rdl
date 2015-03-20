@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>1.97902in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.22421in</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.68735in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.67708in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Debtor Number</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <TextDecoration>Underline</TextDecoration>
+                                <Color>#2d3036</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox1</rd:DefaultName>
+                      <ActionInfo>
+                        <Actions>
+                          <Action>
+                            <Drillthrough>
+                              <ReportName>Collapsible</ReportName>
+                              <Parameters>
+                                <Parameter Name="LanguageID">
+                                  <Value>=Parameters!LanguageID.Value</Value>
+                                </Parameter>
+                                <Parameter Name="administration_id">
+                                  <Value>=Parameters!administration_id.Value</Value>
+                                </Parameter>
+                                <Parameter Name="user_group_id">
+                                  <Value>=Parameters!user_group_id.Value</Value>
+                                </Parameter>
+                                <Parameter Name="user_id">
+                                  <Value>=Parameters!user_id.Value</Value>
+                                </Parameter>
+                                <Parameter Name="G1">
+                                  <Value>=IIf(Parameters!G1.Value="Collapsed","Expanded","Collapsed")</Value>
+                                </Parameter>
+                              </Parameters>
+                            </Drillthrough>
+                          </Action>
+                        </Actions>
+                      </ActionInfo>
+                      <Style>
+                        <Border>
+                          <Color>#b1bece</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>bg1</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <BackgroundRepeat>RepeatX</BackgroundRepeat>
+                        </BackgroundImage>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox21">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Debtor name</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#2d3036</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox21</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#b1bece</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>bg1</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <BackgroundRepeat>RepeatX</BackgroundRepeat>
+                        </BackgroundImage>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox3">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>Amount Paid</Value>
+                              <Style>
+                                <FontWeight>Bold</FontWeight>
+                                <Color>#2d3036</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox3</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#b1bece</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>bg1</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <BackgroundRepeat>RepeatX</BackgroundRepeat>
+                        </BackgroundImage>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.34375in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox14">
+                      <CanGrow>true</CanGrow>
+                      <ToggleImage>
+                        <InitialState>=IIf(Parameters!G1.Value = "Collapsed",True,False)</InitialState>
+                      </ToggleImage>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Debtor_number.Value</Value>
+                              <Style>
+                                <Color>#2d3036</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Left</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox14</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#a4b1be</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>bg2</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <BackgroundRepeat>RepeatX</BackgroundRepeat>
+                        </BackgroundImage>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Debtor_name1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Debtor_name.Value</Value>
+                              <Style>
+                                <Color>#2d3036</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Debtor_name1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#a4b1be</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>bg2</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <BackgroundRepeat>RepeatX</BackgroundRepeat>
+                        </BackgroundImage>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox15">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!currency_display.Value.tostring() +" "+Sum(Fields!Amount_Paid.Value).ToString()</Value>
+                              <Style>
+                                <Color>#2d3036</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox15</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#a4b1be</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <BackgroundImage>
+                          <Source>Embedded</Source>
+                          <Value>bg2</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <BackgroundRepeat>RepeatX</BackgroundRepeat>
+                        </BackgroundImage>
+                        <VerticalAlign>Middle</VerticalAlign>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+            <TablixRow>
+              <Height>0.25in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Invoice_Number1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Invoice_Number.Value</Value>
+                              <Style>
+                                <Color>#383d41</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Invoice_Number1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#a4b1be</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                    <rd:Selected>true</rd:Selected>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Textbox23">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value />
+                              <Style>
+                                <Color>#383d41</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Textbox23</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#a4b1be</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Amount_Paid1">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!currency_display.Value.tostring() +" "+Fields!Amount_Paid.Value.tostring()</Value>
+                              <Style>
+                                <Color>#383d41</Color>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Amount_Paid1</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>#a4b1be</Color>
+                          <Style>Solid</Style>
+                        </Border>
+                        <LeftBorder>
+                          <Style>None</Style>
+                        </LeftBorder>
+                        <RightBorder>
+                          <Style>None</Style>
+                        </RightBorder>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember>
+              <Group Name="Debtor_number1">
+                <GroupExpressions>
+                  <GroupExpression>=Fields!Debtor_number.Value</GroupExpression>
+                </GroupExpressions>
+              </Group>
+              <SortExpressions>
+                <SortExpression>
+                  <Value>=Fields!Debtor_number.Value</Value>
+                </SortExpression>
+              </SortExpressions>
+              <TablixMembers>
+                <TablixMember>
+                  <KeepWithGroup>After</KeepWithGroup>
+                </TablixMember>
+                <TablixMember>
+                  <Group Name="Details1" />
+                  <Visibility>
+                    <Hidden>=IIf(Parameters!G1.Value = "Collapsed",False,True)</Hidden>
+                    <ToggleItem>Textbox14</ToggleItem>
+                  </Visibility>
+                </TablixMember>
+              </TablixMembers>
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <RepeatColumnHeaders>true</RepeatColumnHeaders>
+        <DataSetName>Dataset1</DataSetName>
+        <Top>0.43195in</Top>
+        <Left>0.11874in</Left>
+        <Height>1.27083in</Height>
+        <Width>6.89058in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>3.19236in</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>7.00933in</Width>
+  <Page>
+    <PageHeader>
+      <Height>0.71611in</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Textbox Name="Textbox32">
+          <CanGrow>true</CanGrow>
+          <KeepTogether>true</KeepTogether>
+          <Paragraphs>
+            <Paragraph>
+              <TextRuns>
+                <TextRun>
+                  <Value>Paid Invoices Per Customer</Value>
+                  <Style>
+                    <FontSize>18pt</FontSize>
+                    <FontWeight>Bold</FontWeight>
+                    <TextDecoration>None</TextDecoration>
+                    <Color>#303d4e</Color>
+                  </Style>
+                </TextRun>
+              </TextRuns>
+              <Style>
+                <TextAlign>Center</TextAlign>
+              </Style>
+            </Paragraph>
+          </Paragraphs>
+          <rd:DefaultName>Textbox30</rd:DefaultName>
+          <Top>0.03528cm</Top>
+          <Left>0.3016cm</Left>
+          <Height>0.70222in</Height>
+          <Width>17.50209cm</Width>
+          <Style>
+            <Border />
+            <BackgroundImage>
+              <Source>Embedded</Source>
+              <Value>top_head_bg</Value>
+              <BackgroundRepeat>RepeatX</BackgroundRepeat>
+            </BackgroundImage>
+            <VerticalAlign>Middle</VerticalAlign>
+          </Style>
+        </Textbox>
+      </ReportItems>
+      <Style>
+        <Border />
+      </Style>
+    </PageHeader>
+    <PageHeight>8.5in</PageHeight>
+    <PageWidth>11in</PageWidth>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="SdnaSSRS">
+      <DataSourceReference>SdnaSSRS</DataSourceReference>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>4f69c145-c2a3-4213-aa3a-c929d7ddf9d2</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="Dataset1">
+      <Query>
+        <DataSourceName>SdnaSSRS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@administration_id">
+            <Value>=Parameters!administration_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@user_group_id">
+            <Value>=Parameters!user_group_id.Value</Value>
+          </QueryParameter>
+          <QueryParameter Name="@user_id">
+            <Value>=Parameters!user_id.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sprpt_PoC_Test</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Debtor_number">
+          <DataField>Debtor_number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Debtor_name">
+          <DataField>Debtor_name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DBAddress">
+          <DataField>DBAddress</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Invoice_Number">
+          <DataField>Invoice_Number</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="town">
+          <DataField>town</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Invoice_Date">
+          <DataField>Invoice_Date</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="country">
+          <DataField>country</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Date_Due">
+          <DataField>Date_Due</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Amount_Paid">
+          <DataField>Amount_Paid</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Description">
+          <DataField>Description</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="currency_display">
+          <DataField>currency_display</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DS_User">
+      <Query>
+        <DataSourceName>SdnaSSRS</DataSourceName>
+        <CommandText>
+          SELECT     name, id
+          FROM         users
+        </CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Name">
+          <DataField>name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ID">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DS_Admin">
+      <Query>
+        <DataSourceName>SdnaSSRS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@LanguageID">
+            <Value>=Parameters!LanguageID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SP_Cwize_Admin</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="language_code">
+          <DataField>language_code</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="terminology_text">
+          <DataField>terminology_text</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DS_UserGroup">
+      <Query>
+        <DataSourceName>SdnaSSRS</DataSourceName>
+        <QueryParameters>
+          <QueryParameter Name="@LanguageID">
+            <Value>=Parameters!LanguageID.Value</Value>
+          </QueryParameter>
+        </QueryParameters>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SpUserGroup</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="id">
+          <DataField>id</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="terminology_language_code">
+          <DataField>terminology_language_code</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="terminology_text">
+          <DataField>terminology_text</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DS_Langauge">
+      <Query>
+        <DataSourceName>SdnaSSRS</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>SP_Cwize_Langauge</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="LanguageCode">
+          <DataField>LanguageCode</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Languages">
+          <DataField>Languages</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+    <DataSet Name="DS_Logo">
+      <Query>
+        <DataSourceName>SdnaSSRS</DataSourceName>
+        <CommandType>StoredProcedure</CommandType>
+        <CommandText>sp_dynamicLogo</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="Path">
+          <DataField>Path</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="LanguageID">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>DS_Langauge</DataSetName>
+          <ValueField>LanguageCode</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Language</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DS_Langauge</DataSetName>
+          <ValueField>LanguageCode</ValueField>
+          <LabelField>Languages</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="administration_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>DS_Admin</DataSetName>
+          <ValueField>id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>Administration</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DS_Admin</DataSetName>
+          <ValueField>id</ValueField>
+          <LabelField>terminology_text</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="user_group_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>DS_UserGroup</DataSetName>
+          <ValueField>id</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>User Group</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DS_UserGroup</DataSetName>
+          <ValueField>id</ValueField>
+          <LabelField>terminology_text</LabelField>
+        </DataSetReference>
+      </ValidValues>
+      <UsedInQuery>True</UsedInQuery>
+    </ReportParameter>
+    <ReportParameter Name="user_id">
+      <DataType>Integer</DataType>
+      <DefaultValue>
+        <DataSetReference>
+          <DataSetName>DS_User</DataSetName>
+          <ValueField>ID</ValueField>
+        </DataSetReference>
+      </DefaultValue>
+      <Prompt>User</Prompt>
+      <ValidValues>
+        <DataSetReference>
+          <DataSetName>DS_User</DataSetName>
+          <ValueField>ID</ValueField>
+          <LabelField>Name</LabelField>
+        </DataSetReference>
+      </ValidValues>
+    </ReportParameter>
+    <ReportParameter Name="G1">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Expanded</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>G1</Prompt>
+      <Hidden>true</Hidden>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="bg1">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgAQQAGAwERAAIRAQMRAf/EAGMAAQEBAQAAAAAAAAAAAAAAAAYFBAoBAQACAwAAAAAAAAAAAAAAAAMBAgQFBhAAAgEEAQUAAAAAAAAAAAAAAGEU8AGRoROx0QKSohEBAAMBAQAAAAAAAAAAAAAAAAEREvAh/9oADAMBAAIRAxEAPwDup5nbB1WZaC+8SJDEzCmo6kCS6wNkehuW9+I2BXI1Le7mRgNwNyX07D5FofkOvUahovM/qwtDtjLIf//Z</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="bg2">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgAIgADAwERAAIRAQMRAf/EAGQAAAMBAAAAAAAAAAAAAAAAAAYHCAoBAAMBAAAAAAAAAAAAAAAAAAMEBQYQAAECBAcAAAAAAAAAAAAAAAABU1GRAhbhkuIDBJQVEQEBAQACAwAAAAAAAAAAAAAAEwFRYXGRFP/aAAwDAQACEQMRAD8A1p23uNrLE21sZWSlrVpbQjX8qUuhf7vHjRJAEtGpibrtVxc2or/PnCdUq+wP+ib/2Q==</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="Header">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAQEAYABgAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAhAAYDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwD26iovMoqvq/mR7UpfaE9aK5z7f70V6fsjj5zyKiiiusxP/9k=</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="top_head_bg">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgAQgADAwERAAIRAQMRAf/EAGEAAQEBAAAAAAAAAAAAAAAAAAYJCgEBAQEBAAAAAAAAAAAAAAAAAwIFBxAAAQIFBQEAAAAAAAAAAAAAAAEU8GGRoVJRseFiFZkRAQEBAQEBAAAAAAAAAAAAAAARARKUAv/aAAwDAQACEQMRAD8A2LOE12O9ORUcedr8CTECT9MoqLB3Ax/2uJB35CPQTJR+RdaGP5oLEdB72dhYPrRpzOKCRF1JL6sm34mX6n//2Q==</ImageData>
+    </EmbeddedImage>
+    <EmbeddedImage Name="logo">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAgAAZABkAAD/7AARRHVja3kAAQAEAAAAZAAA/+4ADkFkb2JlAGTAAAAAAf/bAIQAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQICAgICAgICAgICAwMDAwMDAwMDAwEBAQEBAQECAQECAgIBAgIDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMDAwMD/8AAEQgAQgDFAwERAAIRAQMRAf/EALoAAQABBQEBAQAAAAAAAAAAAAAKBAYHCAkFAwEBAQABBQEBAQAAAAAAAAAAAAAHAwQFBggCAQkQAAAGAAQCCAMHAQUJAQAAAAECAwQFBgARBwgSFPAhUWGRoRMJsWKZMUHhIlIVCiNxgcEzFtEygsJjhaYXaCkRAAIBAwMCBAQCBgcDDQAAAAECAwARBCESBTEGQSITB1FhFJQys3GBQrIjFZGhUmJyJAjBkxbwsdGiwtIzQ1Nzo1Sk/9oADAMBAAIRAxEAPwCYtzAdvwxPVRFenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwpenMB2/DCl6cwHb8MKXpzAdvwwperc5z5vP8MVLCvFOc+bz/AAx8YqqlmICgXJPQCvaI8riONS0jEAAAkknQAAakk6ACqZCZZOTnTbPWrhRLL1SIOUlTp55ZcZUzGMTPP78U458eU7YnRmHgCD/zVc5HH5+InqZUE0Ue613RlF9Ta5AF7Am3XQ1U8583n+GKthVnTnPm8/wwsKU5z5vP8MLClOc+bz/DCwpX4Z6UoCYyhSlKAmMYxsgKABmIiIhkAAGP
+jFUUsxAUC5J6AfE16RXkcRxqWkYgAC5JJ0AAHUnwFUqE2xdGEjZ+0cGDPMqDpFYwZAAjmCZjCGQGAf7BxRTJxZW2RyRs/wAAwJ/oBq8m43kseMzT486RLa7MjgC5sLkgAXOg+dVfOfN5/hivYVY05z5vP8MLClOc+bz/AAwsKU5z5vP8MLClOc+bz/DCwpTnPm8/wwsKU5z5vP8ADCwpTnPm8/wwsKU5z5vP8MLCleDYrtV6gwPK2uywVZjEyqHPIWCXYQ7IpUigZQRdSC7dEAIUcx/N1Z48SSRxC7kDQn5m3Ww6n9VX2DxvIcnJ6fHwSTMCAdikhd3TcRooNjqxA0JvYGqqEs8NZYlhPV6YjZ2ElWxHkZLxD5vIxsg1Uz9NwzetDqtnKJsuoxDCGYYRSRzRiWIgoeh/5dCOhB1B0OtUMnGnw8h8XKQpkIbMp6g/9B6gjQixBINa/blNRL7VI7TWE05mWFfsOoep1epP79IRSE0hGNJMHArqAxckUQMocSAAGMUeHLEQ+7vcndfBQcZhdoOicnn5oiBKRsSSUREHqgxqGaTViAQQvmUbrzr7F9l9md0y81yvfCSScNxHHHIZFeRPKokd2PpESEqsegU63PlY7baqzeoWtsNppuErk1qjKyFmq+stFpMVdolu2hn8dF2SPrDh6WMTRRIk3OmtJiAAUAy4u8cQ9y3c/emLxvMYT5uT9fh8piY+9JZNBszRJsNw21mjU9Beyki406NPYftjyfNdo53H8fiR8XzPD52S8bRRAgq2C0IkVQV3osjrcEgXYAkE3vaz0nUbRO9aByDPcFq5d4+36vQNNssDcp4sjEvY1/ETL5wKaJEkzkNnHCbIRMGQd2Ny5aDvHtbnu2Y8rlMydeQzYkniLvZLNDvRiJXWQHeyk2AIW+oOmjdmL7ee4HBd9z43CcdjJw/b+XNiSrGm52WOf0pVDRI0T+RXH7QLW0Iqy5vVvcHWlr5qax1FauqbG7j3WmKd
+Fla+zclSgzWpOEKZnIqog+aGbpLE4SlOACHWONAHf3f0MfKdxQZrqkPKrj+kbyIonLuBHHKJEVV9MgH8SiwBILVNEPtH7IctDw/Yi8cJOYl7flzTlIVjcviqiMJpITG7u5lDEWMbEEkAqtdPec+bz/DHZ9hX5j1aXPh+rp44q2qncVDf92n3G9xGv26c2yTalbrJXazA2xjp+9JQ5R3ETWpeobt2nHPmMvLxq4OHlSYvjigizQUBJ3wioqAgIAXGCW7tPlKPplJ2+I003X8SfD4A2HiT0r2P2bjcNxicpmKRmzRqzlxYoCA3pgHVdv7Q6lhc9FVdc9x3tib9Pbr0wid09a3FPZN9XnEU+vrzTCxW2EnaPIuytG6D55JGMkWzxCT1IEVXK6Kwl9b0Ch6ZynG8mlRpEx3jVI5GADaaNqbfG+l7jT51lOG7o7Y7syn4fFBJO8ESJYPGLKXF7go26wVtr2vuQCpH3s++4PL74tvsiOojluprRpM/ja9fXDZomxb2GOlGi6tbtiKKbhRP15Use5I5KQpCpqpAIgAqZY9iKSBzjym7DoT4r/tI8T8xfWoj9zO0I+2uTTJwk28dkX0F9qSDUgaWVWFii3OocABVAHW7nw/V08cVLVGVxTnw/V08cLUuK+LiXbtG67p05RbNWyKrhy5cKkRbt26JDKLLrrKGKmkikmUTGMYQKUoCIjljy1lBZrBQLkk9K9xo8rrFEpaRiAALkknQAAakk6ADrUGrdbvt3he6Vu1W24bWrXaK1pU/n5GAoNSrczJV6PsMHGujtnF/1Bfx68Yuo1M2QM5cJuuNGMFQU0jqAHGa0IhnxI58sbXcAhDc2J6ADxOtulz/AFV1Z2/2vwHa/CpkTKi5fpFpZpLBjexbzH8MYsLIDtAFzdtzHMsx7GPuQaIQ6Woehu5aEm74xank3sBSNRdRqJbBkUBK4RRhLNI+mwlswIKaiax2ILBkXhUEcxxeTiSqpeOEkC+nlJsL
+eANzfwAudOgNr663f/aUk/owykA2sxR1W5JFrkAi1gSWAUBh5tG2ys9qkPrHTtu+kld3BXJ3etZ4+mxZdQ7G+CMFwvYlkvXdMlF4hJJm+NFFUK2M5zUO5MkKpjnE+eMlxy5P0wfKLb2JIDaFVPQHxJ/a11F9pAtUJdz5HGZHMyvxMcaYYsPJojEDVlUAADw8ujW3gndetg+fD9XTxxf2rX7inPh+rp44WpcU58P1dPHC1LinPh+rp44WpcU58P1dPHC1LinPh+rp44WpcU58P1dPHC1LinPh+rp44WpcVFB/k4vTcltY4zq+iZ1fSpFIccjuilhRDJE3CiqYgGDP1BEuQ/Z23HHYEeVmSSSWssI1/W1dMex+FDlcLlyS2AGSw1/9uOu83txPTl2MbYCqKKmUDSqD4xWEvqcQqOhEDATIhchHIAL+UA6g6sY/GQJFtW20O/77VDPuCqp3hmov4Q6flJV8bmn6DIdD7DIOU2kLW9dqPITT5b8rdgzPz7cjt0sP5G7VJyoTjOYQKUB+37MQ57u5MPHZ/b3J5t143H5aNpJLMVQLJC+tgTcqjkAAswVrA2qVPYmGbkON7r4TBKnlMzgZo4oiyq0rNHMgVdxAtudVLEhVLruIvWbpusUy4xrlvJRce+YTb+Fn3rhkYWh5d7D8ipDSDmQjVW7h8ZBBggRM5lDf0CFIA8AAASPyXbPb3cOOXyYYnSd4pWkjsrS+mCIy0iauvpsyKSTZHOwqbMIm4vuvurtTORMeeeLJwlnhSKXcRjmQ/wAULFJpE/qAOy7ReRB6isNympslarVuc1d3YWBJBemWRtbq6Y6zhIGFgZsX8e1fgVBVMFjIN5JXIp+ImYgIgOWLzkuA43lsrEzM5N0+FN6kRuRZrDqB1FwrfpUC+0srU+3+8ue7YwOS43h5RHi8tiHGyAVVi0ROoUkeUlS8Z6jbIxADiN01x3Ymih09gKtEgwZ2G2atafuYuLYotyPpeULbI99I
+vxYtwBw9OKKBjOF+EwhmAnN1hiLPdiHhk4qDgcJcZeYy+Sjn9CMIJpmZZAZjEtncsyhTIVN2AUm9hXRn+lNOTn73zO5OWknTtrj+38yOTLmL/TwIqxlYTM/8OMKrFxHuWy7mAABNbb8+H6unjia7VyVcVjyWnyRMVJyqhTLJxke9kDopmyUVIybKOTJkEQEAOcqeQd44TP6MLy2vtUm3xsL1WwcYZubDh32+rKiXte25gt7XF7Xva4v8agj+0dFF1O91aoy9pOMm9Z2PU6+C8cgKgGm63FTEk1OAiA5LJukyqFH7jBnj3NGZOOx1SwO5D+pbE/1Cutu+8mPE7DnlcEqYNmnW8lox4jS7An5XsCdKmUb16zHah7R9xlSlSlUYyGkN2dqkN1h6kHDOZ9qbLtI6jCGDsEMW+WGEF0BLBk/fW/8AQNT8q5u7Cmjh7uwXchR6jC5NtWR1Ua+JJAA8SQBqai2fxu7dIRW6bWqqKPDpxc7oiu8VjgH8n7/DXSrGaKGDMMhRiHTnIf8Aq9+LvkZduVjra5kUr+jy7r/P8NvDrf5VO/vTB9R21FNe3oyo9rdbgx26i347316WtrcY91g3ab66V7rGqFN0b1OsuoF4bat3bSbS+nWqZI6rxo6xyKzOAjyw7haOq6JYlqYnCKwBwCTPLqxjk4uSPiTKWZ8lSRv13MR5b3ve5At1PwuazPGcVxOR2JDlZEECce+OsrIwX01BAkJa4C+U3YsQBcbjavJ3/bavcr2p1+n7nda9zclaX1wtzSKkXdGv9vM8qVokYr94ZREnHrpQEAgQ7CLfJitHi6aALL7eESGNQ4XjsheR/wA2qkSC/wDa16kN/e8T1B8CdaxfYvcHC87nSYPG7VEIsqFQl4x5QyL/AGOgAsCtwGVbrfuJpRvF1A1t9k/VzXK2yB3mpMToDrdSZWxFEUlpCeha/MVlpZzHLw8Tkib1FwooH+YqmY45iI4vFSRWkxtLLOEH+Fit/Hw3
+EC2gAAtpWiZ3b+IPd7Ew0BWOaZZyF2gb03toLWszRAv1JLMbgnTlH/G4qUVI7jNeLs9bprSdN0siY+EdKCBl2oWqxik+EpxzH+qhFHKI/fni45LHP80jUGwiDG3x022+X4r/AKrfOt197ZvpOG+nAussyR9bWteS9ra/gtbTre+ljKnte7va7RLBJ1K8blNAqbaoRcraZrNr1j08r1giHJ0UnJG8nCy9iZyTBc7dcigEVTIYSHKbLIQHFJcjGdiiSIXUkEBlJBGhBF9CD1Fc3Y/CcxloJMXDypIyLgpFIwIPQghTcH41S3/WyrWnbfq/qhovqPVbkxh9MtTZCvXXT61QFoh0LBXKrMOkzMp2IfP4cX0XItyCcoq/0jl/Plilm3fCl9FyrhDqpFwQL2vra/Q+IBuCDYi4wePyMXm8XD5PHeNpJowUlRlurPtvtaxIve3VSRYgi4qPF/H0111e1g1u3QyWqupdxv7tKi1BVA9nsUzLIIOhs8ki6VaNngmigWAScJ1mgiThMBc/txXjw1x4YGVQCYvAW/s1OHu7iDH7UwXsADkp+VLWPf5A25DXij7lNMNNKJqvdqfQnWj0BaHVcrVjcQ0c9sTq73CMeun6MIcZtwutFM0CZiQU+AgBnliyniaeHK9QXCWC38AUUm36WJ1/R8KuvbLjMVezJMxI1E8zNva2rbXZV1PgALADQG5AuxJkRbnq/r3qHs+s1e223h/T9c5Cj1p1SLElJto506lW37S8dMXE3KpKFjv3lmRVM7g4AcBP1iGYji0fGyZeHx1xSfUVIyVBtuXZtKkkgWsd2t77bWvUPcdn8fxXeM+RyKKcdciXVl3bGEhZXACsdwK2BABF730qN7qJ7Q3uRwem9q1kte71GXtddrktdZ2sJaoamKypkYmPcTEk1aSpWjCBNJtCpKHTKUxG5jlyBQeoByEEU5RUmRFjHUXF/wBelunz6VM2F7ldvcjycHCxCUiWVUWTZZCzWAGp
+9QXYhLlAAdTZPNW7XsH74tYdfK5qroprRbZe9yumrOGsdQsk+sm5m29aeuBinMLKSChyv5IUHJkVEVFE8iFEwAc2YZepY5sXljiC30rRFwPgwZRp8iGJI+IBFtb6r7x8Di4ORFyiIFyJGCMRoGG0kEjxIC2B620NwFty8143x77NCfc31pgaFqLb9ULOW63HSvTWlTKa0xCGgZ2ZOFaZsaTDlLEHdxLRRBQjg5CCU4AY4AADizy8EpHFlK3nS4Z/E6FSb6m9vG9x4GpMi4nieX7VwpTjRRcdLFFKYlACKTtlsQoUMA2rXAD67gQSK6v+3Fsa39abbrnW5LeJqzKzbB9QrEv/AKZDUhzZVHN6sSyMWjHz8JHv3FaTbxUG7duAVamWR5oEeHMwCYvjH49vrFymUjbc3NrkkEa63BsSdR8jUT979y9tZHDNxPDOkkodEsisqoqG91OwIyjYEAVrEMGUkDXmVrzuS3f+6vvgmtuW3zUqV080yr89LRdajWE++rEFGwFY5skxcLtI15Vy7kH7oiKqi7cqjk4f02ySfEJS4qQJ9RL6+R+MghF8F/R8/Enqf0AAb7w/F8H7f8FLyOWSwRAZG23eRjZVUDwuzbUUnat7s34nOoXuXbPN020JppJBa9a4pa1VKwoWY1HdFn7JOlrT1kszNJxudsYR7oA5ZduYBIYQEoh9+YBmOFikxsaTGfb6lr6fA3+Q+FbJ2b3Lhdx8ZLlYKSJEkpQhwoNwqtcbWYWsw8b3B0qZt7eLwU9kW2UoiACGlNfEcuoPzFWN1AAjkHX2jixwF/yw/wAb/vtXNXf9h3dmA9dyflJWd9cpdg10c1OcybZq+ao0ixKA0eJEXbrOyxrj9uA6ahTFzLIekJTZZkMAGDIQAcaF7wNix+23KtmRetCYUAXcUtI0saxSXXU+lKUl29H2bG8rGtn9jcLN5D3Z4PG42QxZP1ZcnaGvHHHJJMljp/EhWSPd1XduFyBXi1uzR+je
+gNQkrMm/BnTdP6ehMIMyGfvwdBHRTByRFI6pPVMD9wPVxABS/Z1AAY+4HK4vZftjj81Kkk0EGBFLtuNzPPtIW9vKvqS2vZiqa2cixzvM8VzHvX795fC4rQw8nyPKTQq21gix4qMgbaCSz+hj3tdQ8vjGrXW+JnUyGg7TQqg6I/PKaiKWAkGdFsJmiBa1BnnZBSSWMYhmgGbAUiYcIiZQ2XVljPf8V4LZnD4caSF+ZikkiJ2jYkcAmO+xPmIZFCi41Y7vKA2gjsXklwu4M2Z4wnb0kcU4G475Jcr6VQhIXyBg7FmsdFGzzEpiG4M0y7ndI7C8QRctntEvUGwMuQqpWMzGKNJgjltxAPoulI9ysXiDr4Q6vsxFndXEoffrt/mcxQML+XSxKzgbDKDkMgUt5TIGePaB5gzJbUrU5di87kxf6XO7eC4yRhmHl8aWRYyfV9Bxjo+8KdwhdI5A1/IyJKDdQ9bKc/8AN54n21crXWsfPzoSLF5HuTH5d+0cM1+AwFP6LpE6CvAYQMBTcBxyHIchxUlhEsTRN+FlINutiLV7xMqTDyosuIAyRSK4Bva6kML2INrjWxH6ag1e11MH0Q91irwlwRVjZFa36kaZKslwFMUJ2xtJeDiwMBsh4lDLFIAfeJgxSmdl47GMfUug/USAf6ia6+74hhyewshJRuUYxe1yPMi71OnwZQbdDaxuNKl9b3dRWGnm0XcVbZJUCM2Gk9uZnExgADKzsarX2qYD+tZ1KEIUPvMYAxTz0LYxA670/fWubPb67d44S/33/Keo0H8c+qP3W4zW6+nZLjD13SdSvhIiBgSLPWS2Vt8ikJv90TKxUW4AA7ExH7sXedCsmXATfciFh+m23X5WY/rtU6e9uQ+P21BEliJZ0Rr/AACtJp87oOt9L/IjHDlT/wDfBmr/APXIK5/9ydGz/txarnhcU4/icnb/APJarteQC+0noHqeII//AD2rr/8AyDXQLbFa+XPPLcFQTf8A
+iWowf82L+A+nlRMf7f8A2WqK/ZR7d4N8Po3/ADIqw3sHqTrUD2MNbKLGoKryU7SdzbWKZti8ashLto+VdRrVIodZjSEi0TT6v14xryMz5MyWBTJDa/BRGx/qBt8/hWx9w8omB7wYGY4JUbE0+MjSxg6kaAuCfkDYE6VpH/HX1Ah69uS1ko7wx2snetLEXcOmopkCylRsLZ47bAUw5ityksqsIB1gJT9g4veRlvnwSAXEykfo03X/AOrb9dbb74Yxyu31zAbCOZJOl73vHbqLf+Je+vS1tbjOPvQe3Jp3Wq/rHvhi9Q7m5u9wvNP/AHClSKMIpWE05MiEQ4bs3KbJOTAnG0KoQFDmEhR4c8gDPD4nFDCzHyGfeJpWNttrbiWte5vbp0F61T2p7lXkMxeCaDb6OLu37732FEtt2C191/xG1ra3vW0ntUPAN7OWopQOcQUgtzQAUwnECAMHLk9MnqCY3AXLIPu7MXmWFWDKK9AG/LFYv3JKr7k4AX8IGN+e9aPfxwXPo6v7nC5iADQqsP29ttkf9mL8yepBAo/9L/u1tnvPLu7QwAP/ALSfky1jH+RKIq7wdIVQzMVbQKCSVKH3pBetSTnN/d6AYsFF1zEPTcv5aVlPa07uw1U9LyfmvXen3Et/Btiu16o3SvRDOc1Cvn7TUKA0lvU/ZGL/APY03r+blQRyOsjEsylFNLMpFFjl4x4AMU1pJLNBiQQ4wHqOg1IvYBQNNetyLXBGhuKiPg+1Ye5e7eSXKJ+jx8qQkKbFmaZ9oOh8hVXDWKt02nqRyLqdA93nd3t5tm4y3bq1NKaBYaJcLLE0tu8koZ3bqozjZoJFD/TdQRaxUOzmWzZZFoC3D6zcUlsgA/EbGLict9R9SZH+mF2a7mxAOoCi+vWwsF+dbi0vZ/b/AHFi8THjxHkkyIIwBCCyF9pRzI4F7XUlg7Pc31INrT/jirejrDuGUMBTKG03iExX9E7dYQJaIzMixVRMsqY2YDxG
+ER6u/G48kFbkYWHU4zfvJWye/wCipw2C69TOv5clYa1aEDe/DFm+425GoGH/AIysjD4gOMdP/H4HKA/GryAfqYith7bdp/b3GUfiXCjA/VGtTDdSpR6jpzf1Y0ygSKVKtSkeKf8Amc6SCfma+nl18frgXLvxUyojJjSIOrIw/pBrk/t0GTuDBjHVsyEf0yKKiXewI4ZI70NdzyAJjIL6dzqkasrkDozobfGi+DIfzZ+gKmfdizn4yfCzMQn8B3X/AN21dIe7HHZGD2k7E+Q+nf8A3if7a2I/kiLevDbXDZiOUjqSX+8G1WH/ABxkMdiM2RPEwr+89YT2Xc/yfJXw+qb8uOu4OwN4CWy/bYTPLh0qrfV/aicf8cW+Cp+nH+N/32qJvcQle8s0f3o/yY6yRuLdKSWmw1ZuoUry722kVFoJzABRPJ2mLVcAIjkAByLRURz6sgHEVe9/103ZS8Nx0ayZXJcji4qqbAlmk9RArFlVSZI0W7HaFLXt+ISz/pbyOJ4v3Pfurm5GiweF4bkMwsASAFx2gcsoV3YLHO7BUG8uq2vqrXhq1XXl/wBOrRTo1yzavZtkg3bLPwUMzTOg/aPP6xUSKKcJithAMgHIRD7sbZ3z23PzvZWX29xKRrK8KLGmiLaJ0cIv7K3CbUGig2BKrcjTfZTv/E7A92+J7855pZMXFyZXmcXkcmeGWIyNc7ns0u97bnIDFVdrKaC0VWQmdQtILY1XjysNPlboMmmuVUr1YljqxoRmMYBCHSL6bkAFUDmD+mPVnjG5HaebDznbE+MPVw+IhyIpX8q6PiCFG2Fix3Oo0XdtvqbC9Ie/8PI4DvSDJX0c7uLJxZoo/M9ime2U67woHlVrbmCbraC+lW5rUYiEro9bzOQbkq2qEO3dKHHhIWPtTZ3XXHGb7g5h2iHfnjX/AHdyIeGm4DuTMdY+OxeYhWVrMSqyOjFgqqSQqwsSB5r7QqtfTeP9PmNL3DxveHZeHG0nK53b
+k80C3VVaTGSQKhZmUKzNkLtJ8oAYsy2F87/uAfqHEzba5r3GrM5/vDFW1eN1RnPc/wDbM1se66H3g7Qo55OT0jLMLXcqdW35mV3i7nHrJrHttPOstxPxkXCZXCySAKu0nHH6KQkMBQxMkEsDtu3TYzsTa1ypOpFh4fA+HQ66nob2+7/4qTjF4fm5I4ZMeNVUyMFjdFAVbMxsHAsGUnX8S6bgmqOsGpXvE78qdXtudu0GtETXEncd/qOaLpNY9KW1xft1lWjeavVitajSCh0Ypc65jN2Xps3RQSWFoU5UzFs25SLIcJCpkK+YAAsdNL6XPja/zra4sXsjtjNbmMaKDEml3LuaVgvmIcqqu/prqt1CKLAWWy6VIJ9t3Ziz2P6DkpknIMJzUq4PkLHqROx4qiwNIothbxdfjDqESO4i68gqqCaxyAqqs4VMIiQUwLm4Em2l5z/Ebw+A8B1sT1uR8ba2BqC/cDvH/izllbHLfy3HUrHcW3EnzvawYBrKArG4CgkKzMo5Futk26YfeBabhE9I5o2jhNwhbse9/u1d/agrYis8PJC3/cf3AAKBwDg4PV4vyAXi/LjXceTJGc8UkEvpfUGzbG229TRr2ta2t+njUiY/c/DjsR+MkyMf6r+VlAu9d2/0NoAW9927S3W/hXR33kNEdW9x+0uI090Ypz29WxDWKnWRzCxyzJu5LBxVfuaLx2VZ87YokKR2+bpjkcTD6uWQhnlmuQeWJI3hV2YSD8IJIG1tdPD51oPtpyuLxXcD5OZKkMRxWUM7BRcvGbXJAvYE2+VXp7TmjupmgGzCpabawVVWn29C13uUdV185ZvHDaOmJtVZkDkzQ6qQCuiAjwmHi4RAfsEBHzhD1o5TMhUPIbhgRcbVB0PUHp8PCvXuPy+NndyRZ3GTI+3HTzxuDZxJIdGU6MND1uNDXEndD7Y+7XaXuKc7iNjkfL2SpIWB5baojSE0n9z0+VkHTl0/rEnWXsoZ7a4JJJUy
+KRkm0kRwj/npEOYQG1nL4MCwTK8sEa3D2JIC+LEfhI67tB4i2oEt9t+4fC9wcOmBzXpLmgCN45SNsm7ygpuPnV+hTVlPlNwVZrM1v1e94HfRQC6B23bVcGleXfxT6YMhoxJ0P94dRiw8o5mrRdnNegWRSqmFU4MnDMpTdQJjwhihFzkeQ+yBTI4F7KCxHzsL/Ea/Or3jYOx+0pzyWFHFizOpj3vM5BBIbaPVkZbkoDoL2BsbXrvdsD2o3jQPYwXbfq05hW9msjbUlObb192Miyg2eoBXrYkdziYlSdvI9m5zVMiqolxiIEVOAAbGTWCeTHmEoCyylrAnpdQova/iL6X0+elQ33h3ZxnLd6Y/N4heTBxzDc7bFtkhkbaG2nodvm26g+FiY3+g+mnube3Fr/ajaTbfbna5OfbLVFzy9Ast+0wvDBKTF8WUQlq6i2M1b84QVmhlZFoqiBxKf8g5Di/5i2Ptx5VZcgaKPE3NhYftAnQWuCRpU3ZXJdrd0cFtzjBkcWtmvu27CoDXLAq8TKp8wJVgpKsLEirg3m7RfdR3F3rTLV/WrSx7drffY53Voep0JpBqF04rsI4LMxsTbDQwhX6WD9xYFzIOXsk6OIEcA5HiIIYvsfOeHjskTxN9VOPINvmbbobKPNoAPDpr0r1273F2jx3AZvHcVNCmLihbneSi+qzMtpXJDbmJGjtY+XQ2FdpPc+2ha0buNnGjqNQhy/8AunSRvXLbMacGlIgy004d1FnG3asR0ykunDuZuNep5tjJOE27r0jgmYwmSA3vCMsUWJkSxkhYQHUg7gWVOqnXQghh1B8LAkRd7ed0cTxXdXIHkZUSDKmZldiPTO15Tq5NhuDXUnQ2te5UHntt61q93iS0Ojtk9W2vDX28ZXH+nB9XNUNObhTi1ukSQPGIJOp2esjaqupSOiXRkSOGzV+Iok/poqKgUwWU3NrkZ5xcRBIp6hQTbW2utgNQCTp8xW5dw4faMXdS92cm
+5jkjZWI32jeSIfwzt1cuoVbIjAOUF0a7Bssey/tP3U7XtwutrvVbSyXgNPZKrOaUFwlFY+Gayliip9nIt5eFjXjoZ2yRckkzUTSdt2rdp6ZynEc8gG5hy8rIzEDwyBNhBZgVCjQ+IF7kAWGut+gNYX3T7l4fneCjix8uGTIjnR1VGWQnyspXyk7QAxa50uoXqwrx9Qtlm56V93qH19YaRSbrR5LWeqW9W9pyUOMUWFat2hnjtwH7sd6QiHpDxJlR9QDfl4AHqxaPJmDHysFYX3yO2020IZiQd34ehF9dNb2INZzt3vXgMbspMSbKgSdMRVKlwHuiAMAn4ybg2ABLfs3BF5NB3hFCHTUBNRNQpiHIcAMQ5DAJTEOUwCUxTFHIQHqEMbAVBFjqDXM8U8kMizQsyTIwZWUkFSDcEEagg6gjUGofeqO1bfH7cu8uc112tab2LU6lSVhlpSnvK9VJW/xMrWrSqqaXoV8gK6onMtF2iTlUCq5MyEBIF27gDlKYMRFmy8eDDyl5EH4HN7G4NrHwb4re/XqNT1LwfdnAd68I3Gc1aVXUepCzsrqUZWBBRlcqH2kOtgbhWsdyj77ydIvdZ3102j6wavaCsK9FVyTQq9R0ko8RLRdtMecKc0hcXtKlHlxn4OLWXapkXVk5RsKZCkESkIJcUF5GZo/rBE4RiFDWOt/w2HUgk6G1iTYG5tVDtrluze2I34DjchfWG+VzI4LEjRtzgLGpRVsUG0hV3sv4mMlnZHV9RNNtp+hdD1Yh29e1CqlHaQ1lhW0k0lkmDlq8elapA/YmO0VOaOFExykMYEjmEgmMJREcpgq4xVMgKubmx6i7E6/DQ9PDxsagfvbkcXku6MvNw3EmM7IAw6ErGitY+I3KbEaEagkEGr31qfItTaZ2CVOqSsVfUqHmrC4SLmjHELHyrCKlpBQCiZGMj5Z8kKxvsDiAR6gxFfuquRj5PB8xL6n8hwuUilyWG5ljtJEUkdFux2gS
+BWCmxbYDukUNKnsf6Gfh9y9u4ao/dvJcLLBhodoeW8c3rRRs1lu38JmXcLqhkI2xMy5rRlUXCKThusiugumRZBdFQqqKyKpQOmqkoQTEUTUIYBKYBEBAcwxLcMsORCmRjuskEihlZSGVlYXDKRcEEEEEGxGoqCMqDJwsmTCzY5IcyF2SSN1KOjoSrI6sAysrAhlIBBBBAIr68/3hipaqG6sI69S7J1SgqpEySVls81XG1XhEFCg/dyLGwxckL1LPMWzSKRaGXWcG4U0yFyEwCYoDDHvZl8Zkdsjthk9fn82aE40Sp6jqyTKTJbqm5Q8SFfO5cooK+oV6Y/0w8Jzo73bvZS2N2dxmHmfW5DsY4SrYko9JmNkcqzRzOrHZGqLI5VvSDZu5/vDEz2rmfdVn873+WKtqp7jTne/ywtTcac73+WFqbjTne/ywtTcac73+WFqbjTne/wAsLU3GnO9/lham4053v8sLU3GnO9/lham4053v8sLU3GnO9/lham4053v8sLU3GnO9/lham4053v8ALC1Nxpzvf5YWpuNOd7/LC1Nxpzvf5YWpuNOd7/LC1Nxpzvf5YWpuNOd7/LC1Nxr5OFUHSCzV0ki5bOUlG7hu4SIsg4QWIKayKyKhTJqpKpmEpimAQMA5D1YpTQQ5EL4+QiyQSKVZWAZWVhYqwNwQQSCCLEaGrjFzMrByo83CleHNhkV45EYo6OhDI6OpDKysAyspBUgEEEVixLSqtxqqilYmLfTElRIJ2FZsjxrEgKZeAgJRD4sjGtyFD7CppEKGY5B14j2P2x4bDkkbhsvlOPhk23jx8kovlFhqyu51JPmdrFjtsNBN7f6hO7OQjhHd3G9v9wTQbtsnI4QmcbyCbGKSFVuAqnYq3CLuuReqg1CeKgoRxqfqcqmfqAqc1DMzEL2FWYV5q44u/jzxbYXtxnwTyvl9wc5LCWvGq5DKUW50dmMgkNtouqxi4J26gLmec9/O2s7Cw4uD7A7O
+wc+JP8xI2M06zSWXzRRkx+gm4OTG75Jsyr6l0LP7NYpFUqTleRi2B1pl2mCbyflnbuYnHJAzExDSUks4XQSUMPEZNEU0jG6xLnjZeB7K7f7eYT4cPqZ4/wDPlO+X9oeVrAJ5WKn01Tctt+4i9aB3z7y+4XuCrYvPZ7rw7EH6SC8ONoUI3Rqby2eNXX1mkMb3MZW9qvfne/yxtdqi7catrme/p4YqWrxc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc05nv6eGFqXNOZ7+nhhalzTme/p4YWpc1yS+qzjN/ZVi/uqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuqfVZw+yp91T6rOH2VPuq//9k=</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>39740417-387b-4afa-bf97-2001a3a8109c</rd:ReportID>
+</Report>

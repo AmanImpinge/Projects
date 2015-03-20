@@ -1,0 +1,62 @@
+﻿<!DOCTYPE ndxml PUBLIC "-//NETDESPATCH//ENTITIES/Latin" "ndentity.ent">
+<ndxml version="2.0">
+  <credentials>
+    <identity>yodelt</identity>
+    <password>yodelt</password>
+  </credentials>
+  <request id="1" function="createNewJob" style="11" responseType="labelURL">
+    <job jobType="HT">
+      <tariff code="HDN"/>
+      <account id="1234568"/>
+      <service code="ON"/>
+      <pickupDateTime time="21:00:00" date="2015-01-23"/>
+      <reference>EXAMPLE REF 1</reference>
+      <costcentre>EXAMPLE REF 2</costcentre>
+      <notes/>
+      <segment type="P" number="1">
+        <orderDateTime time="21:00:00" date="2015-01-23"/>
+        <address>
+          <company>SENDER COMPANY NAME</company>
+          <building>YODEL SORT CENTRE</building>
+          <street>CIM DEPARTMENT</street>
+          <locality>FROBISHER WAY</locality>
+          <town>HATFIELD BUS PK</town>
+          <county>HATFIELD</county>
+          <zip>AL10 9TR</zip>
+          <country ISOCode="GB"/>
+        </address>
+        <contact>
+          <name>CONTACT NAME</name>
+          <telephone ext="">07711897662</telephone>
+          <email>geoff.james@yodel.co.uk</email>
+        </contact>
+        <pieces>2</pieces>
+        <weight>10</weight>
+      </segment>
+      <segment type="D" number="2">
+        <orderDateTime time="21:00:00" date="2015-01-23"/>
+        <address>
+          <company>COMPANY NAME</company>
+          <building>5TH FLOOR</building>
+          <street>1 DOCK HOUSE ROAD</street>
+          <locality>MEDIA CITY</locality>
+          <town>GAIRLOCH</town>
+          <county></county>
+          <zip>IV21 2QH</zip>
+          <country ISOCode="GB"/>
+        </address>
+        <contact>
+          <name>CONTACT NAME</name>
+          <telephone ext="">07711897662</telephone>
+          <email>geoff.james@yodel.co.uk</email>
+        </contact>
+        <pieces>2</pieces>
+        <weight>10</weight>
+        <alertEmail value="true"/>
+      </segment>
+      <issues>
+        <issue id="65536">1</issue>
+      </issues>
+    </job>
+  </request>
+</ndxml>

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href="@Url.Content("~/Content/themes/Admin/css/bootstrap.min.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("~/Content/themes/Admin/css/londinium-theme.min.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("~/Content/themes/Admin/css/styles.min.css")" rel="stylesheet" type="text/css">
+    <link href="@Url.Content("~/Content/themes/Admin/css/icons.min.css")" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&amp;subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+
+@*    <script src="~/Content/jquery-min.js"></script>
+    <script src="~/Content/jquery-ui-min.js"></script>*@
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/charts/sparkline.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/uniform.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/select2.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/inputmask.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/autosize.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/inputlimit.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/listbox.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/multiselect.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/validate.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/tags.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/switch.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/uploader/plupload.full.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/uploader/plupload.queue.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/wysihtml5/wysihtml5.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/forms/wysihtml5/toolbar.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/daterangepicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/fancybox.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/moment.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/jgrowl.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/datatables.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/colorpicker.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/fullcalendar.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/timepicker.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/plugins/interface/collapsible.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/bootstrap.min.js")"></script>
+    <script type="text/javascript" src="@Url.Content("~/Content/themes/Admin/js/application.js")"></script>
+
+  @*  <script src="~/Content/jquery-ui.js"></script>
+    <link href="~/Content/jquery-ui.css" rel="stylesheet" />
+*@
+
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+        <link href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+
+
+    <script type="text/javascript" src="@Url.Content("~/jsSystem/CallPages.js")"></script>
+
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+
+
+    <meta name="viewport" content="width=device-width" />
+  
+</head>
+<body  class="full-width page-condensed">
+    <!-- Navbar -->
+    <div class="navbar navbar-inverse" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+                @*<img src="~/Content/themes/Admin/images/logo.png" alt="Londinium">*@
+                Work Tracking System
+            </a>
+        </div>
+ @*       <ul class="nav navbar-nav navbar-right collapse">
+            <li><a href="#"><i class="icon-screen2"></i></a></li>
+            <li><a href="#"><i class="icon-paragraph-justify2"></i></a></li>
+            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-cogs"></i></a>
+                <ul class="dropdown-menu icons-right dropdown-menu-right">
+                    <li><a href="#"><i class="icon-cogs"></i>This is</a></li>
+                    <li><a href="#"><i class="icon-grid3"></i>Dropdown</a></li>
+                    <li><a href="#"><i class="icon-spinner7"></i>With right</a></li>
+                    <li><a href="#"><i class="icon-link"></i>Aligned icons</a></li>
+                </ul>
+            </li>
+        </ul>*@
+    </div>
+    <!-- /navbar -->
+    
+
+        @RenderBody()
+
+    
+
+    
+        @Html.Partial("_FooterPartial")
+    
+
+    @Scripts.Render("~/bundles/knockout")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,7 @@
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.exe
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\bin\Debug\ScreenSaver.pdb
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.Form1.resources
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.Properties.Resources.resources
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.csproj.GenerateResource.Cache
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.exe
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreenSaver\obj\x86\Debug\ScreenSaver.pdb

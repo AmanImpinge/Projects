@@ -1,0 +1,6 @@
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.exe
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.pdb
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\obj\x86\Debug\ScreensaverService.exe
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\obj\x86\Debug\ScreensaverService.pdb
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\obj\x86\Debug\ScreensaverService.ProjectInstaller.resources
+D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\obj\x86\Debug\ScreensaverService.csproj.GenerateResource.Cache

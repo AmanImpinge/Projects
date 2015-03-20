@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Code.LocalizedValue("Hello", "es")</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.64458in</Top>
+        <Left>1.74875in</Left>
+        <Height>1.11458in</Height>
+        <Width>4.12625in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>3.85417in</Height>
+    <Style />
+  </Body>
+  <Width>8.94792in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <Code>Public Function LocalizedValue(Name as String, cultureName as String) as String
+    Try
+        Return SSRS.Onguard.LocalizedValue.GetString(name, cultureName)
+    Catch ex As Exception
+        Return ex.Message
+    End Try
+End Function
+</Code>
+  <CodeModules>
+    <CodeModule>SSRS.Onguard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4825b9edcd0979e2</CodeModule>
+  </CodeModules>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>67d18463-3fb9-403a-bea2-54e97e015b95</rd:ReportID>
+</Report>

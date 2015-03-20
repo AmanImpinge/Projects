@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>SdnaSSRS.rds</Name>
+      <FullPath>SdnaSSRS.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSets />
+  <Reports>
+    <ProjectItem>
+      <Name>Age analysis details.rdl</Name>
+      <FullPath>Age analysis details.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Age analysis.rdl</Name>
+      <FullPath>Age analysis.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AgeingAnalysis.rdl</Name>
+      <FullPath>AgeingAnalysis.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AgeingAnalysisCloud.rdl</Name>
+      <FullPath>AgeingAnalysisCloud.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AgeingAnalysisNoWrap.rdl</Name>
+      <FullPath>AgeingAnalysisNoWrap.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>AgeingAnalysisYing.rdl</Name>
+      <FullPath>AgeingAnalysisYing.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Collapsable1.rdl</Name>
+      <FullPath>Collapsable1.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Collapsible.rdl</Name>
+      <FullPath>Collapsible.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Complaint_Actions_By_Action_Taker.rdl</Name>
+      <FullPath>Complaint_Actions_By_Action_Taker.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Complaint_Actions_By_Action_Taker_Backup.rdl</Name>
+      <FullPath>Complaint_Actions_By_Action_Taker_Backup.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>DebtorOutstandingInvoices.rdl</Name>
+      <FullPath>DebtorOutstandingInvoices.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dynamic LogoAndWaterMark .rdl</Name>
+      <FullPath>Dynamic LogoAndWaterMark .rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>InsertLingual.rdl</Name>
+      <FullPath>InsertLingual.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PoC.rdl</Name>
+      <FullPath>PoC.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PoCFinal.rdl</Name>
+      <FullPath>PoCFinal.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>PoCNewTemplate.rdl</Name>
+      <FullPath>PoCNewTemplate.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report1.rdl</Name>
+      <FullPath>Report1.rdl</FullPath>
+      <PublishableComponents>
+        <PublishedItem>
+          <ComponentId>8189dc00-0366-4924-895b-f803cf2c74b7</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>Tablix5</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>2ea1b055-606c-4091-960b-18d9cdbdb60e</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>Tablix3</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>77093e43-68d0-43f1-b777-5c9c7470c9d5</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>LanguageID</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>2ce4f3ed-4ae8-4eb5-a549-c8f542c4fbcf</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>Image1</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>4896ce9c-268c-4f64-9171-dae58fd8cb06</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>flagInclude0</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>fa9d70d8-843f-4797-9ce5-5b907290c4c2</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>flagDueDate</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>40097d1c-061e-439b-a835-e023519c8575</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>flagCombineAdmins</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+        <PublishedItem>
+          <ComponentId>95eb05d2-694a-4545-a6e2-ca1c29373eda</ComponentId>
+          <IsOverwriteOnRedeploy>true</IsOverwriteOnRedeploy>
+          <ComponentName>DebtorNumber</ComponentName>
+          <IsSelectedToPublish>false</IsSelectedToPublish>
+        </PublishedItem>
+      </PublishableComponents>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report2.rdl</Name>
+      <FullPath>Report2.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Report3.rdl</Name>
+      <FullPath>Report3.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserStatistics.rdl</Name>
+      <FullPath>UserStatistics.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserStatisticsBack.rdl</Name>
+      <FullPath>UserStatisticsBack.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>UserStatisticsBAckkkkkkk.rdl</Name>
+      <FullPath>UserStatisticsBAckkkkkkk.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Weighted DSO details.rdl</Name>
+      <FullPath>Weighted DSO details.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Weighted DSO.rdl</Name>
+      <FullPath>Weighted DSO.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <ErrorLevel>0</ErrorLevel>
+        <TargetServerVersion>SSRS2008</TargetServerVersion>
+        <TargetServerURL>http://ganga:85/reportserver</TargetServerURL>
+        <TargetFolder>SDNAReports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <StartItem>AgeingAnalysisNoWrap.rdl</StartItem>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>SdnaSSRS</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>SdnaSSRS</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

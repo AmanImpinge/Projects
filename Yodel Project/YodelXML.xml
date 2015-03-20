@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ndxml PUBLIC "-//NETDESPATCH//ENTITIES/Latin" "ndentity.ent">
+<ndxml version="2.0">
+  <credentials>
+    <identity>yodelt</identity>
+    <password>yodelt</password>
+  </credentials>
+  <request id="1" function="createNewJob" style="11" responseType="labelURL">
+    <job jobType="HT">
+      <tariff code="@tariff"/>
+      <account id="@account"/>
+      <service code="ON"/>
+      <pickupDateTime time="@pickupDate" date="@pickupDate"/>
+      <reference>@reference</reference>
+      <costcentre>@costcentre</costcentre>
+      <notes/>
+      <segment type="P" number="1">
+        <orderDateTime time="@orderTime" date="@orderDate"/>
+        <address>
+          <company>@SenderCompany</company>
+          <building>@Senderbuilding</building>
+          <street>@Senderstreet</street>
+          <locality>@Senderlocality</locality>
+          <town>@Sendertown</town>
+          <county>@Sendercounty</county>
+          <zip>@Senderzip</zip>
+          <country ISOCode="@Sendercountry"/>
+        </address>
+        <contact>
+          <name>@ContactName</name>
+          <telephone ext="">@ContactTelephone</telephone>
+          <email>@ContactEmail</email>
+        </contact>
+        <pieces>@Pieces</pieces>
+        <weight>@Weight</weight>
+      </segment>
+      <segment type="D" number="2">
+        <orderDateTime time="@PickupDate" date="@PickupDate"/>
+        <address>
+          <company>@DeliveryCompanyName</company>
+          <building>@DeliveryBuilding</building>
+          <street>@DeliveryStreet</street>
+          <locality>@DeliveryLocality</locality>
+          <town>@DeliveryTown</town>
+          <county>@DeliveryCounty</county>
+          <zip>@Deliveryzip</zip>
+          <country ISOCode="@Deliverycountry"/>
+        </address>
+        <contact>
+          <name>@ContactName</name>
+          <telephone ext="">@ContactTelephone</telephone>
+          <email>@ContactEmail</email>
+        </contact>
+        <pieces>@Pieces</pieces>
+        <weight>@Weight</weight>
+        <alertEmail value="true"/>
+      </segment>
+      <issues>
+        <issue id="65536">@Issue</issue>
+      </issues>
+    </job>
+  </request>
+</ndxml>

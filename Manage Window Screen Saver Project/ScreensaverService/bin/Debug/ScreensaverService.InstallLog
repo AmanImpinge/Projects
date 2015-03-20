@@ -1,0 +1,13 @@
+﻿Installing assembly 'D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.InstallLog
+   assemblypath = D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.exe
+Installing service WinService...
+Service WinService has been successfully installed.
+Creating EventLog source WinService in log Application...
+Committing assembly 'D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.InstallLog
+   assemblypath = D:\Impinge Data\ScreenSaver\ScreenSaver\ScreensaverService\bin\Debug\ScreensaverService.exe

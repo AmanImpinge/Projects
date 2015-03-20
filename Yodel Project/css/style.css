@@ -1,0 +1,212 @@
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+	background: #fff;
+	color: #606468;
+    margin: 0;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:14px;
+	height:100%;
+}
+
+html {
+    height: 100%;
+}
+
+a {
+	color: #eee;
+	text-decoration: none;
+}
+
+a img{ border:none; outline:none;}
+
+a:hover {
+	text-decoration: underline;
+}
+
+input {
+	border: none;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+p {
+	line-height: 1.5em;
+}
+.clearfix{border:none;}
+.clearfix { *zoom: 1; } /* For IE 6/7 */
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+/* ---------- LOGIN ---------- */
+.wrapper { width:305px; margin:0 auto;}
+.moneyx-logo {
+    margin:10px 0;
+    text-align: center;
+    width: 100%;
+	float:left;
+}
+.moneyx-logo a{ width:294px; display:inline-block;}
+#login-moneyxchnage {
+	border-radius: 6px 6px 6px 6px;
+    margin:20px 0;
+    padding:4px;
+    width:305px;
+	float:left;
+	background:#22c0cc;
+}
+#login-moneyxchnage h4 {
+    margin: 0;
+    text-align: center;
+}
+.fontawesome-user:before {
+    content: ""; font-size: 17px; color:#fff;
+}
+.fontawesome-lock:before {
+    content: "";font-size: 17px; color:#fff;
+}
+
+#login-moneyxchnage form span {
+	background-color: #363b41;
+	border-radius: 3px 0px 0px 3px;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	width: 50px;
+}
+
+#login-moneyxchnage form input {
+	height:48px;
+}
+
+.sport-input{
+	background:#fff;
+    border: 1px solid rgb(60, 60, 60);
+	border-radius: 0px 3px 3px 0px;
+	color: #3c3c3c;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 198px;
+}
+
+.sport-btn{
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	 background:#3c3c3c;
+    border: 1px solid rgb(255, 255, 255);
+	color: #eee;
+	font-weight: bold;
+/*	margin-bottom: 2em;*/
+	text-transform: uppercase;
+	width: 280px;
+	 cursor: pointer;
+}
+
+#login-moneyxchnage form input[type="submit"]:hover {
+	background:#;
+}
+
+#login-moneyxchnage > p {
+	text-align: center;
+}
+
+#login-moneyxchnage > p span {
+	padding-left: 5px;
+}
+
+.signup{ text-decoration:none; color:#F47C35;}
+
+#login-moneyxchnage h2 {
+    color: rgb(255, 255, 255);
+    margin:10px 0 10px;
+    text-align: center;
+	font-size:26px;
+}
+
+#login-moneyxchnage h5 {
+    font-size: 12px;
+    font-weight: normal;
+    margin: 5px;
+    text-align: right;
+	color:#BB2222;
+}
+
+/*----------editor-page-css-------------------*/
+
+.editor-wrapper{ width:100%; float:left;height: 100%;}
+.editor-cont{ max-width:1024px; width:100%; margin:0 auto; height: 100%;}
+.header{ width:100%; background:#22c0cc; padding:4px 0; text-align:center;  margin-bottom: 15px;}
+.header h2{color:#fff; font-size:26px; }
+.edit-mid-containor{ float:left; width:100%;  color:#000;}
+.edit-left{ width:200px; margin-right:4px; float:left;}
+.edit-left ul{ float:left; width:100%; margin:0px; padding:0px;}
+.edit-left ul li{ float:left; display:inline-block; list-style:none; width:91%;}
+.edit-left ul li a{ float:left; padding:6px 0; font-size:14px; color:#a7a7a7; border-bottom:1px solid #CCC; width:100%;}
+.edit-right{ width:820px; float:right;}
+
+#footer{ width:100%; background:#000; float:left; color:#fff; bottom:0;}
+
+
+/*----------register-page-css-------------------*/
+
+.adult-infowrap{ background:url(../images/add-infobg.png) repeat; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px;  float: left;
+    width:98%; padding:8px;   height: 100%; min-height: calc(100%);  margin-bottom: 20px;}
+.adult-infowrap h1{  font-size: 21px; font-weight: normal; margin: 0 0 10px; color:#303030;}
+.adult-infowrap label{ font-size:14px; color:#22c0cc; float:left; width:100%; margin:5px 0;}
+.adult-info-leftbox{ width:303px; float:left; margin-right:10px;}
+.adult-info-leftbox-inner{background:#f6f6f6; border:1px solid #dbdbdb; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; float:left;  padding:5px;  padding: 4%;
+    width: 92%;margin-bottom: 10px; }
+
+.adult-info-rightbox{ width:670px; float:right; }
+.adult-info-rightbox-inner{ background:#f6f6f6; border:1px solid #dbdbdb; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px;  padding:2%; float:left; width:96%; margin-bottom: 10px;}
+.adultinfo-input { background: none repeat scroll 0 0 #fff; border:1px solid #bdbdbd; border-radius:3px; color: #3c3c3c; margin-bottom: 1em;
+    padding: 5px; width: 96%;}
+.adultinfo-select { background: none repeat scroll 0 0 #fff; border:1px solid #bdbdbd; border-radius:3px; color: #3c3c3c; margin-bottom: 1em;
+    padding:7px; width:100%;}
+	
+.info-row{ float:left; width:100%; margin-bottom:8px;}	
+.info-column{ float:left; width:290px; margin-right: 25px;}
+.button-save{ background:#22c0cc; width:90px; padding:8px; text-align:center; color:#fff; border-radius:6px;  -moz-border-radius:6px; -webkit-border-radius:6px; float:right;
+ font-size:18px; cursor:pointer;
+}
+.role-column{ width:160px; float:left; margin-right:10px;}
+.dob-column{ width:267px; float:left; margin-right:10px;}
+.dob-select{background: none repeat scroll 0 0 #fff; border:1px solid #bdbdbd; border-radius:3px; color: #3c3c3c; margin-right:5px;
+    padding:7px; width:30%;}
+	
+.button_upload{ background:url(../images/add-btn.png) no-repeat;
+    border: medium none;
+    cursor: pointer;
+    float:left;
+    font-size: 0;
+    height:36px;
+    position: relative;
+    width:90px;
+	border-radius:4px;	
+}
+.button_upload input[type="file"] {
+    cursor: pointer;
+    float: left;
+    height: 29px;
+    opacity: 0;
+    width:78px;
+	color:#fff;
+}
+.upload-input{ margin-left:5px; padding:5px;  border: 1px solid #bdbdbd; border-radius: 3px;}

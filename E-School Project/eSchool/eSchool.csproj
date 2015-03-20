@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C53A7FE9-C7F9-4492-BDB5-5080CC101B2C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>eSchool</RootNamespace>
+    <AssemblyName>eSchool</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Autofac">
+      <HintPath>..\packages\Autofac.3.4.0\lib\net40\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac.Integration.Mvc">
+      <HintPath>..\packages\Autofac.Mvc5.3.3.3\lib\net45\Autofac.Integration.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.1.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.1.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.1.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\jquery-min.js" />
+    <Content Include="Content\jquery-ui-min.js" />
+    <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\jquery-ui.js" />
+    <Content Include="Content\PagedList.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Content\themes\admin\css\bootstrap.min.css" />
+    <Content Include="Content\themes\admin\css\icons.min.css" />
+    <Content Include="Content\themes\admin\css\londinium-theme.min.css" />
+    <Content Include="Content\themes\admin\css\styles.min.css" />
+    <Content Include="Content\themes\admin\fonts\glyphicons-halflings-regular-2.html" />
+    <Content Include="Content\themes\admin\fonts\glyphicons-halflings-regular-3.html" />
+    <Content Include="Content\themes\admin\fonts\glyphicons-halflings-regular-4.html" />
+    <Content Include="Content\themes\admin\fonts\glyphicons-halflings-regular.html" />
+    <Content Include="Content\themes\admin\fonts\glyphicons-halflings-regulard41d.html" />
+    <Content Include="Content\themes\admin\images\background.html" />
+    <Content Include="Content\themes\admin\images\collection.html" />
+    <Content Include="Content\themes\admin\images\collection_hover.html" />
+    <Content Include="Content\themes\admin\images\colorpicker\alpha.png" />
+    <Content Include="Content\themes\admin\images\colorpicker\hue.png" />
+    <Content Include="Content\themes\admin\images\colorpicker\saturation.png" />
+    <Content Include="Content\themes\admin\images\demo\big.jpg" />
+    <Content Include="Content\themes\admin\images\demo\images\1.png" />
+    <Content Include="Content\themes\admin\images\demo\images\2.png" />
+    <Content Include="Content\themes\admin\images\demo\images\3.png" />
+    <Content Include="Content\themes\admin\images\demo\images\4.png" />
+    <Content Include="Content\themes\admin\images\demo\images\5.png" />
+    <Content Include="Content\themes\admin\images\demo\images\6.png" />
+    <Content Include="Content\themes\admin\images\demo\images\7.png" />
+    <Content Include="Content\themes\admin\images\demo\images\8.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face1.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face10.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face11.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face12.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face13.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face14.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face15.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face16.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face17.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face18.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face19.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face2.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face20.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face21.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face22.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face23.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face24.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face25.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face3.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face4.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face5.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face6.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face7.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face8.png" />
+    <Content Include="Content\themes\admin\images\demo\users\face9.png" />
+    <Content Include="Content\themes\admin\images\flags\english.png" />
+    <Content Include="Content\themes\admin\images\flags\german.png" />
+    <Content Include="Content\themes\admin\images\flags\hungarian.png" />
+    <Content Include="Content\themes\admin\images\flags\spanish.png" />
+    <Content Include="Content\themes\admin\images\flags\ukrainian.png" />
+    <Content Include="Content\themes\admin\images\forms\add_files.png" />
+    <Content Include="Content\themes\admin\images\forms\check.png" />
+    <Content Include="Content\themes\admin\images\forms\check_white.png" />
+    <Content Include="Content\themes\admin\images\forms\choice.png" />
+    <Content Include="Content\themes\admin\images\forms\choice_white.png" />
+    <Content Include="Content\themes\admin\images\forms\clear_results.png" />
+    <Content Include="Content\themes\admin\images\forms\spinner_bottom.png" />
+    <Content Include="Content\themes\admin\images\forms\spinner_top.png" />
+    <Content Include="Content\themes\admin\images\forms\switch_handler.png" />
+    <Content Include="Content\themes\admin\images\interface\arrow_left.png" />
+    <Content Include="Content\themes\admin\images\interface\arrow_right.png" />
+    <Content Include="Content\themes\admin\images\interface\breadcrumb_home.png" />
+    <Content Include="Content\themes\admin\images\interface\calendar.gif" />
+    <Content Include="Content\themes\admin\images\interface\date-picker-icon.png" />
+    <Content Include="Content\themes\admin\images\interface\filter.png" />
+    <Content Include="Content\themes\admin\images\interface\lightbox_overlay.png" />
+    <Content Include="Content\themes\admin\images\interface\loader.gif" />
+    <Content Include="Content\themes\admin\images\interface\minus.png" />
+    <Content Include="Content\themes\admin\images\interface\nav_arrow_left.png" />
+    <Content Include="Content\themes\admin\images\interface\nav_arrow_right.png" />
+    <Content Include="Content\themes\admin\images\interface\plupload_done.png" />
+    <Content Include="Content\themes\admin\images\interface\plupload_error.png" />
+    <Content Include="Content\themes\admin\images\interface\plupload_remove.png" />
+    <Content Include="Content\themes\admin\images\interface\plupload_title.png" />
+    <Content Include="Content\themes\admin\images\interface\plus.png" />
+    <Content Include="Content\themes\admin\images\interface\slider_handle.png" />
+    <Content Include="Content\themes\admin\images\interface\tables\sort_asc.png" />
+    <Content Include="Content\themes\admin\images\interface\tables\sort_asc_disabled.png" />
+    <Content Include="Content\themes\admin\images\interface\tables\sort_both.png" />
+    <Content Include="Content\themes\admin\images\interface\tables\sort_desc.png" />
+    <Content Include="Content\themes\admin\images\interface\tables\sort_desc_disabled.png" />
+    <Content Include="Content\themes\admin\images\interface\typing.gif" />
+    <Content Include="Content\themes\admin\images\interface\vertical_arrows.png" />
+    <Content Include="Content\themes\admin\images\interface\zoom.png" />
+    <Content Include="Content\themes\admin\images\logo.png" />
+    <Content Include="Content\themes\admin\images\logo_dark.png" />
+    <Content Include="Content\themes\admin\index.html" />
+    <Content Include="Content\themes\admin\js\application.js" />
+    <Content Include="Content\themes\admin\js\application_blank.js" />
+    <Content Include="Content\themes\admin\js\bootstrap.min.js" />
+    <Content Include="Content\themes\admin\js\charts\full\animated_1.js" />
+    <Content Include="Content\themes\admin\js\charts\full\animated_2.js" />
+    <Content Include="Content\themes\admin\js\charts\full\animated_3.js" />
+    <Content Include="Content\themes\admin\js\charts\full\auto_empty.js" />
+    <Content Include="Content\themes\admin\js\charts\full\auto_filled.js" />
+    <Content Include="Content\themes\admin\js\charts\full\donut.js" />
+    <Content Include="Content\themes\admin\js\charts\full\horizontal_bars.js" />
+    <Content Include="Content\themes\admin\js\charts\full\multiple_axes.js" />
+    <Content Include="Content\themes\admin\js\charts\full\pie.js" />
+    <Content Include="Content\themes\admin\js\charts\full\pie_full.js" />
+    <Content Include="Content\themes\admin\js\charts\full\simple_graph.js" />
+    <Content Include="Content\themes\admin\js\charts\full\vertical_bars.js" />
+    <Content Include="Content\themes\admin\js\charts\widgets\filled_blue.js" />
+    <Content Include="Content\themes\admin\js\charts\widgets\filled_green.js" />
+    <Content Include="Content\themes\admin\js\charts\widgets\filled_red.js" />
+    <Content Include="Content\themes\admin\js\charts\widgets\updating_1.js" />
+    <Content Include="Content\themes\admin\js\charts\widgets\updating_2.js" />
+    <Content Include="Content\themes\admin\js\charts\widgets\updating_3.js" />
+    <Content Include="Content\themes\admin\js\globalize\globalize.culture.de-DE.js" />
+    <Content Include="Content\themes\admin\js\globalize\globalize.culture.ja-JP.js" />
+    <Content Include="Content\themes\admin\js\globalize\globalize.js" />
+    <Content Include="Content\themes\admin\js\jquery.lightbox_me.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\excanvas.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\flot.animator.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\flot.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\flot.orderbars.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\flot.pie.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\flot.resize.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\flot.time.js" />
+    <Content Include="Content\themes\admin\js\plugins\charts\sparkline.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\autosize.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\inputlimit.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\inputmask.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\listbox.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\multiselect.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\select2.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\switch.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\tags.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\uniform.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\uploader\plupload.full.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\uploader\plupload.queue.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\validate.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\wysihtml5\toolbar.js" />
+    <Content Include="Content\themes\admin\js\plugins\forms\wysihtml5\wysihtml5.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\collapsible.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\colorpicker.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\datatables.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\daterangepicker.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\fancybox.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\fullcalendar.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\jgrowl.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\moment.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\mousewheel.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\prettify.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\tabletools.min.js" />
+    <Content Include="Content\themes\admin\js\plugins\interface\timepicker.min.js" />
+    <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-1.7.1.js" />
+    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.js" />
+    <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.1.0.debug.js" />
+    <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\knockout-3.2.0.js" />
+    <Content Include="Scripts\modernizr-2.5.3.js" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CookieMaster.cs" />
+    <Compile Include="Models\EFModule.cs" />
+    <Compile Include="Models\RepositoryModule.cs" />
+    <Compile Include="Models\ServiceModule.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\web.config" />
+    <Content Include="packages.config" />
+    <Content Include="Content\themes\admin\css\icons\icons.eot" />
+    <Content Include="Content\themes\admin\css\icons\icons.svg" />
+    <Content Include="Content\themes\admin\css\icons\icons.ttf" />
+    <Content Include="Content\themes\admin\css\icons\icons.woff" />
+    <Content Include="Content\themes\admin\css\icons\iconsd41d.eot" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_FooterPartial.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\Create.cshtml" />
+    <Content Include="Views\Home\Edit.cshtml" />
+    <Content Include="Views\Home\Delete.cshtml" />
+    <Content Include="Views\Home\Details.cshtml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\eSchool.Model\eSchool.Model.csproj">
+      <Project>{faf36a99-0265-4bbd-8e7a-012191eb80cb}</Project>
+      <Name>eSchool.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eSchool.Repository\eSchool.Repository.csproj">
+      <Project>{78956c71-b768-40a1-809a-c5c667ea69b1}</Project>
+      <Name>eSchool.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eSchool.Service\eSchool.Service.csproj">
+      <Project>{e9600186-4602-4cdb-9e5a-5701e759d4b1}</Project>
+      <Name>eSchool.Service</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25347/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
